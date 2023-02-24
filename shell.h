@@ -200,8 +200,8 @@ void free_info_t_struct(info_t *, int);
 /* environment_functions_1.c module */
 char *print_current_environment(info_t *, const char *);
 int get_environment_value(info_t *);
-int set_environment_variable(info_t *);
-int unset_environment_variable(info_t *);
+int setenv(info_t *);
+int unsetenv(info_t *);
 int populate_env_list(info_t *);
 
 /* environment_functions_2.c module */
